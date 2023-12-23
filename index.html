@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- //You can set browser behavior by adding self-closing meta elements in the head. -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music O </title>
+    <link rel="shortcut icon" href="logo2.png" type="image/png" class="icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 680px)" href="phone.css">
+    <script src="https://kit.fontawesome.com/633ffd52b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="openclose">
+        <i class="fa-solid fa-bars menubar" onclick="openmenu()"></i>
+    </div>
+    <main>
+        <!-- sidemenu -->
+
+        <div id="sidemenu">
+            <div class="openclose">
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </div>
+            <ul>
+                <div class="imgmusico"><img src="logo2.png" alt="" srcset="">
+                    <h2>Music O</h2>
+                </div>
+                <li><a href=""><span><i class="fa-solid fa-house"></i></span>Home</a></li>
+                <li><a href=""><span><i class="fa-solid fa-magnifying-glass"></span></i>Search</a></li>
+                <li><a href=""><span><i class="fa-solid fa-bookmark"></span></i>Library</a></li>
+            </ul>
+            <div class="playlist">
+                <div class="playlist1">Playlist</div>
+                <ul>
+                    <li><a href=""><span><i class="fa-solid fa-circle-plus"></i></span>Create playlist</a></li>
+                    <li><a href=""><span><i class="fa-solid fa-heart"></i></span>Liked songs</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="playlist playlist2">
+                <ul>
+                    <li><a href="">2023 greatest songs</a></li>
+                    <li><a href="">#Playlist1</a></li>
+                    <li><a href="">#Playlist2</a></li>
+                    <li><a href="">#Playlist3</a></li>
+                    <li><a href="">#Playlist4</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- rest      -->
+        <div id="rest">
+            <nav class="topmenu">
+                <div class="icons"><i class="fa-solid fa-less-than"></i><i class="fa-solid fa-greater-than"></i></div>
+                <div class="profile">
+                    <img src="./covers/song12.jpg" alt="" srcset="">
+                    <span>Ankijit Roy</span>
+                </div>
+            </nav>
+            <div class="heavyrotaion">
+                <div class="containertitle">
+                    <h2>Your Heavy Rotation</h2>
+                    <div>See all</div>
+                </div>
+                <div class="songs">
+                    <div class="song1"><img src="./covers/song1.jpg">
+                        <h2>Starlight</h2><span>Tekaisan</span>
+                    </div>
+                    <div class="song1"><img src="./covers/song2.png">
+                        <h2>Streets ghost</h2><span>David joe</span>
+                    </div>
+                    <div class="song1"><img src="./covers/song3.jpg">
+                        <h2>Vulture eyes</h2><span>Kid shot</span>
+                    </div>
+                    <div class="song1"><img src="./covers/song4.jpg">
+                        <h2>Retro dance</h2><span>PUG</span>
+                    </div>
+                    <div class="song1"><img src="./covers/song5.jpg">
+                        <h2>Light swan</h2><span>Adriana</span>
+                    </div>
+                    <div class="song1"><img src="./covers/song6.jpg">
+                        <h2>Toxic</h2><span>PUG</span>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="heavyrotaion">
+                <div class="containertitle">
+                    <h2>Songs made for you</h2>
+                    <div>See all</div>
+                </div>
+                <div class="songs">
+                    <div class="song1"><img src="./covers/song7.jpg">
+                        <h2>Crack</h2><span>Bazz</span>
+                    </div>
+                    <div class="song1"><img src="./covers/song8.jpg">
+                        <h2>Robotic love</h2><span>Kithhh</span>
+                    </div>
+                    <div class="song1"><img src="./covers/song9.jpg">
+                        <h2>Universal</h2><span>Dj music</span>
+                    </div>
+                    <div class="song1"><img src="./covers/song10.png">
+                        <h2>Diamond</h2><span>PUG</span>
+                    </div>
+                    <div class="song1"><img src="./covers/song11.jpg">
+                        <h2>Phoniex</h2><span>Raven</span>
+                    </div>
+                    <div class="song1"><img src="./covers/song12.jpg">
+                        <h2>Daily shit</h2><span>Adriana</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <!-- player -->
+    <div class="musicplayer">
+        <div id="div1">
+            <div id="playerimg"><img src="./covers/song8.jpg" class="albumimg" id="playerimg1"></div>
+            <div class="playertext">
+                <h3></h3>
+                <p></p>
+            </div>
+            <div class="playericon"><i class="fa-solid fa-heart" id="liked"></i></div>
+        </div>
+        <div class="div2">
+            <div class="buttons">
+                <i class="fa-solid fa-backward" id="previous"></i>
+                <i class="fa-solid fa-play" id="song"></i>
+                <i class="fa-solid fa-forward" id="next"></i>
+            </div>
+            <div class="range">
+                <input type="range" name="" id="songtime" min="0"  max="100" step="1">
+            </div>
+        </div>
+        <div class="div3">
+            <i class="fa-solid fa-compact-disc"></i>
+            <i class="fa-solid fa-headphones"></i>
+            <i class="fa-solid fa-volume-off" id="mute"></i>
+            <input type="range" name="" id="volume">
+        </div>
+    </div>
+    </div>
+    <script>
+        //responsive
+        const liked = document.getElementById("liked");
+
+        liked.addEventListener("click", function () {
+            if (liked.classList.contains("fa-solid")) {
+                liked.classList.remove("fa-solid");
+                liked.classList.add("fa-regular");
+            }
+            else {
+                liked.classList.remove("fa-regular");
+                liked.classList.add("fa-solid");
+            }
+        });
+
+
+
+        //sidemenu
+        var sidemenu = document.getElementById("sidemenu");
+        function closemenu() {
+            sidemenu.style.left = "-200px";
+        }
+        function openmenu() {
+            sidemenu.style.left = "0";
+        }
+    </script>
+
+    <script>
+        //songs
+        let songIndex = 0;
+        let audioElement = new Audio('');
+        let masterPlay = document.getElementById('song');
+        let songTime = document.getElementById("songtime");
+        let song = Array.from(document.getElementsByClassName("song1"));
+        let div1 = document.getElementById("div1");
+        let previous = document.getElementById("previous");
+        let next = document.getElementById("next");
+        let p=document.getElementById("playerimg1");
+
+        let songs = [
+            { songName: "Starlight", songWriter: "Tekaisan", filePath: "./songs/music1.mp3", coverPath: "./covers/song1.jpg" },
+            { songName: "Streets ghost", songWriter: "David joe", filePath: "./songs/music2.mp3", coverPath: "./covers/song2.png" },
+            { songName: "Vulture eyes", songWriter: "Kid shot", filePath: "./songs/music3.mp3", coverPath: "./covers/song3.jpg" },
+            { songName: "Retro dance", songWriter: "PUG", filePath: "./songs/music4.mp3", coverPath: "./covers/song4.jpg" },
+            { songName: "Light swan", songWriter: "Adriana", filePath: "./songs/music5.mp3", coverPath: "./covers/song5.jpg" },
+            { songName: "Toxic", songWriter: "PUG", filePath: "./songs/music6.mp3", coverPath: "./covers/song6.jpg" },
+            { songName: "Crack", songWriter: "Bazz", filePath: "./songs/music7.mp3", coverPath: "./covers/song7.jpg" },
+            { songName: "Robotic love", songWriter: "Dj music", filePath: "./songs/music8.mp3", coverPath: "./covers/song8.jpg" },
+            { songName: "Universal", songWriter: "Tekaisan", filePath: "./songs/music9.mp3", coverPath: "./covers/song9.jpg" },
+            { songName: "Diamond", songWriter: "PUG", filePath: "./songs/music10.mp3", coverPath: "./covers/song10.png" },
+            { songName: "Phoniex", songWriter: "Raven", filePath: "./songs/music11.mp3", coverPath: "./covers/song11.jpg" },
+            { songName: "Daily shit", songWriter: "Adriana", filePath: "./songs/music12.mp3", coverPath: "./covers/song12.jpg" }
+
+        ]
+
+
+        //pauseplay
+        masterPlay.addEventListener('click', () => {
+            if (audioElement.paused || audioElement.currentTime <= 0) {
+                audioElement.play();
+                masterPlay.classList.remove("fa-play");
+                masterPlay.classList.add("fa-pause");
+            }
+            else {
+                audioElement.pause();
+                masterPlay.classList.remove("fa-pause");
+                masterPlay.classList.add("fa-play");
+            }
+        })
+        // //change volume
+        window.addEventListener("load", function () {
+            let volume = document.getElementById('volume');
+            audioElement.volume = volume.value / 100;
+            volume.addEventListener("input", function () {
+                audioElement.volume = volume.value / 100;
+
+            })
+        })
+
+        //mute not mute
+        const mute = document.getElementById("mute");
+        mute.addEventListener('click', () => {
+            if (audioElement.muted == false) {
+                audioElement.muted = true;
+                mute.classList.remove("fa-volume-off");
+                mute.classList.add("fa-volume-xmark");
+            }
+            else {
+                audioElement.muted = false;
+                mute.classList.add("fa-volume-off");
+                mute.classList.remove("fa-volume-xmark");
+            }
+        })
+
+        //setting songsbar
+        audioElement.addEventListener('timeupdate', () => {
+            progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
+            songTime.value = progress;
+        })
+
+        songTime.addEventListener('change', () => {
+            audioElement.currentTime = songTime.value * audioElement.duration / 100;
+        })
+        //setting song
+
+        song.forEach((element, i) => {
+            element.addEventListener('click', () => {
+               p.classList.remove("albumimg");
+                audioElement.pause();
+                
+                div1.getElementsByTagName("img")[0].src = songs[i].coverPath;
+                div1.getElementsByTagName("h3")[0].innerHTML = songs[i].songName;
+                div1.getElementsByTagName("p")[0].innerHTML = songs[i].songWriter;
+                audioElement = new Audio(songs[i].filePath);
+                audioElement.play();
+                masterPlay.classList.remove("fa-play");
+                masterPlay.classList.add("fa-pause");
+
+
+                //setting the audiobar
+                audioElement.addEventListener('timeupdate', () => {
+                    progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
+                    songTime.value = progress;
+                })
+
+                songTime.addEventListener('change', () => {
+                    audioElement.currentTime = songTime.value * audioElement.duration / 100;
+                })
+                //next
+                next.addEventListener('click', () => {
+                    if (i >= 11) {
+                        i = 0;
+                    }
+                    else {
+                        i += 1;
+                    }
+                    audioElement.pause();
+                    div1.getElementsByTagName("img")[0].src = songs[i].coverPath;
+                    div1.getElementsByTagName("h3")[0].innerHTML = songs[i].songName;
+                    div1.getElementsByTagName("p")[0].innerHTML = songs[i].songWriter;
+                    audioElement = new Audio(songs[i].filePath);
+                    audioElement.play();
+                    masterPlay.classList.remove("fa-play");
+                    masterPlay.classList.add("fa-pause");
+
+
+                    //setting the audiobar
+                    audioElement.addEventListener('timeupdate', () => {
+                        progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
+                        songTime.value = progress;
+                    })
+
+                    songTime.addEventListener('change', () => {
+                        audioElement.currentTime = songTime.value * audioElement.duration / 100;
+                    })
+
+                })
+                //previoius
+                previous.addEventListener('click', () => {
+                    if (i <=0) {
+                        i = 11;
+                    }
+                    else {
+                        i -= 1;
+                    }
+                    audioElement.pause();
+                    div1.getElementsByTagName("img")[0].src = songs[i].coverPath;
+                    div1.getElementsByTagName("h3")[0].innerHTML = songs[i].songName;
+                    div1.getElementsByTagName("p")[0].innerHTML = songs[i].songWriter;
+                    audioElement = new Audio(songs[i].filePath);
+                    audioElement.play();
+                    masterPlay.classList.remove("fa-play");
+                    masterPlay.classList.add("fa-pause");
+
+
+                    //setting the audiobar
+                    audioElement.addEventListener('timeupdate', () => {
+                        progress = parseInt((audioElement.currentTime / audioElement.duration) * 100);
+                        songTime.value = progress;
+                    })
+
+                    songTime.addEventListener('change', () => {
+                        audioElement.currentTime = songTime.value * audioElement.duration / 100;
+                    })
+
+                })
+            })
+        })
+
+        //next previous
+        //next
+
+        //previous
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+
+/* menu */
+.openclose{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: block;
+    font-size: 1.3rem;
+    color: white;
+}
+.openclose i{
+    padding-right: 1rem;
+}
+
+/* sidermenu */
+#sidemenu{
+    position: fixed;
+    left: -200px;
+    z-index: 1;
+}
+
+.icons{
+    display: none;
+}
+
+.imgmusico{
+    margin-top: 1rem;
+}
+.imgmusico img{ 
+    height: 2rem;
+    width: 4rem;
+    margin-left: -0.7rem;
+}
+
+.imgmusico h2{
+    font-size: 20px;
+}
+/* topmenu */
+.profile{
+    display: inline;
+    position: absolute;
+    top:0.5rem;
+    right: 0.5rem;
+}
+.profile span{
+    display: none;
+}
+
+.profile img{
+    background: none;
+}
+
+/* songs */
+
+.containertitle{
+    font-size: 0.9rem;
+}
+
+.containertitle div{
+    display: none;
+}
+
+.songs img {
+    width: 80%;
+    height: 122px;
+}
+.songs h2 {
+    padding: 1rem 0rem 0rem 1rem;
+    font-size: 1.4rem;
+}
+
+/* player */
+
+.musicplayer{
+    padding: 0.2rem 0.2rem 0rem 0.2rem;
+    justify-content: space-between;
+}
+.playertext{
+    position: relative;
+    top:-14px;
+}
+
+
+.buttons{
+    width: 5.5rem;
+    
+}
+
+.buttons i{
+    font-size: 0.9rem;
+    margin: 0.4rem 0.4rem 0.4rem 0.4rem;
+
+   
+}
+.buttons i:nth-child(2){
+    font-size: 0.9rem;
+}
+
+
+.songs{
+    grid-template-columns: repeat(auto-fit,minmax(96px,1fr));
+}
+
+#songtime{
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+
+}
+
+
+
+
+.div3{
+    display: none;
+}
